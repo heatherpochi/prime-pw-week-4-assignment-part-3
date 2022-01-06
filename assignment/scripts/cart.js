@@ -88,3 +88,17 @@ console.log('Basket reached the maximum number of items', isFull());
 console.log('Adding salmon (expect true)', updatedAddItem('salmon'));
 console.log(`Basket is now ${basket}`);
 console.log('Basket reached the maximum number of items', isFull());
+
+function removeItem(item){
+  let removedItem = [];
+  if(basket.includes(item) === false){
+    return null;
+  }
+  basket.indexOf(item);
+  removedItem = basket.splice(basket.indexOf(item), 1);
+  return removedItem;
+}
+
+console.log(removeItem('sugar'));
+console.log(removeItem('milk'));
+console.log(basket);
