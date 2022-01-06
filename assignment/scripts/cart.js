@@ -6,4 +6,14 @@ let basket = [];
 function addItem('item'){
   basket.push('item');
   return true;
-}
+};
+
+function listItmes(){
+  for(let i = 0; i < basket.length; i++){
+    console.log('basket[i]'');
+  }
+};
+
+function empty(){
+  basket = [];
+};
