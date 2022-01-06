@@ -57,7 +57,6 @@ function updatedAddItem(item){
   if(isFull() === true){
     return false;
   }
-
   basket.push(item);
   return true;
 };
